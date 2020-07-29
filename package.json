@@ -27,6 +27,7 @@
     "cheerio": "^1.0.0-rc.3",
     "flush-promises": "^1.0.2",
     "jest-when": "^2.7.2",
+    "mockdate": "^3.0.2",
     "vue-template-compiler": "^2.5.17"
   },
   "browserslist": [
