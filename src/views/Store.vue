@@ -1,12 +1,12 @@
 <template>
     <div class="about">
         <h1>Your random entity from store is {{storeResult}}</h1>
-        <button v-on:click="randomEntity">GoStore</button>
+        <el-button type="primary" v-on:click="randomEntity">GoStore</el-button>
     </div>
 </template>
 
 <script>
-import {mapState, mapActions} from 'vuex'
+import {mapActions, mapState} from 'vuex'
 
 export default {
     computed: mapState({

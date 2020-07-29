@@ -12,6 +12,10 @@ export default {
   data: () => ({
     result: ''
   }),
+  async mounted() {
+    const {data} = await Api.randomEntity()
+    this.result = data.entries[0].API
+  },
   methods: {
     go: function () {
       return Api.randomEntity()
@@ -19,9 +23,9 @@ export default {
             console.log(response)
             this.result = response.data.entries[0].API
             // this.$toasted.show(response.data.entries[0].Link, {
-            //     type: 'info',
-            //     position: 'bottom-center',
-            //     duration: 2000
+            //   type: 'info',
+            //   position: 'bottom-center',
+            //   duration: 2000
             // })
           })
     },
